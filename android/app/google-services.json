@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "67589910477",
+    "project_id": "perdiz-adv",
+    "storage_bucket": "perdiz-adv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67589910477:android:ed2b7ab30df6611d271e84",
+        "android_client_info": {
+          "package_name": "com.example.perdiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67589910477-ggno5jm5kva90gjkvd07bla3dston8cv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn51szJoHtCf_yALXkx7wW9Z2Z-2Og8Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67589910477-ggno5jm5kva90gjkvd07bla3dston8cv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
