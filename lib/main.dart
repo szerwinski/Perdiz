@@ -84,7 +84,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
+      body: SingleChildScrollView(
+          child: Center(
         child: Form(
             key: formKey,
             child: Container(
@@ -93,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    SizedBox(height: MediaQuery.of(context).size.width * 0.3),
+                    SizedBox(height: MediaQuery.of(context).size.width * 0.1),
                     TextFormField(
                       controller: _nomeController,
                       decoration: const InputDecoration(
@@ -242,7 +243,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 ])))
                           ],
                         )),
-                    SizedBox(height: MediaQuery.of(context).size.width * 0.25),
+                    SizedBox(height: MediaQuery.of(context).size.width * 0.1),
                     TextButton(
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
@@ -285,10 +286,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           "Enviar",
                           style: TextStyle(
                               fontSize: 24, fontWeight: FontWeight.bold),
-                        ))
+                        )),
+                    SizedBox(height: MediaQuery.of(context).size.width * 0.1),
+                    SizedBox(
+                        child: Column(
+                      children: [
+                        const Text("Powered by",
+                            style: TextStyle(fontStyle: FontStyle.italic)),
+                        const SizedBox(height: 2),
+                        Image.asset('assets/rango-laranja.png',
+                            height: 80, width: 200),
+                      ],
+                    ))
                   ],
                 ))),
-      ),
+      )),
     );
   }
 }
