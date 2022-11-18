@@ -37,6 +37,8 @@ dependencies:
   firebase_core: ^2.2.0
   cloud_firestore: ^4.0.5
   mask_text_input_formatter: ^2.4.0
+  cool_alert: ^1.1.0
+  url_launcher: ^6.1.6
 
 dev_dependencies:
   flutter_test:
